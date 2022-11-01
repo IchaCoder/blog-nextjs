@@ -1,6 +1,9 @@
 import React from "react";
+import { useGlobalContext } from "../context";
 
 const About = () => {
+	const { name } = useGlobalContext();
+	console.log(name);
 	return (
 		<div className="text-red-500 tracking-widest text-center mt-8">
 			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci nisi
